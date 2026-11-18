@@ -1,0 +1,2 @@
+import RecordManager from '@/components/record-manager';
+export default function Goals(){return <RecordManager table="metas" title="Metas financeiras" description="Transforme planos em conquistas, acompanhando seu progresso." fields={[{name:'nome',label:'Nome da meta',required:true},{name:'valor_meta',label:'Valor objetivo (R$)',type:'number',required:true},{name:'valor_atual',label:'Valor guardado (R$)',type:'number',required:true},{name:'data_limite',label:'Data limite',type:'date'}]} columns={['nome','valor_atual','valor_meta','data_limite']}/>;}

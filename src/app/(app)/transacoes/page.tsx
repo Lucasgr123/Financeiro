@@ -1,0 +1,2 @@
+import RecordManager from '@/components/record-manager';
+export default function Transactions(){return <RecordManager table="transacoes" title="Transações" description="Acompanhe e organize todas as suas movimentações." fields={[{name:'descricao',label:'Descrição',required:true},{name:'tipo',label:'Tipo',options:['receita','despesa'],required:true},{name:'valor',label:'Valor (R$)',type:'number',required:true},{name:'categoria',label:'Categoria',required:true},{name:'data',label:'Data',type:'date',required:true}]} columns={['descricao','tipo','categoria','data','valor']}/>;}

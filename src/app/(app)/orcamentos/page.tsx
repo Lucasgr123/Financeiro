@@ -1,0 +1,2 @@
+import RecordManager from '@/components/record-manager';
+export default function Budgets(){return <RecordManager table="orcamentos" title="Orçamentos" description="Defina limites mensais e mantenha seus gastos sob controle." fields={[{name:'categoria',label:'Categoria',required:true},{name:'limite_mensal',label:'Limite mensal (R$)',type:'number',required:true},{name:'mes',label:'Mês de referência',type:'month',required:true}]} columns={['categoria','limite_mensal','mes']}/>;}
